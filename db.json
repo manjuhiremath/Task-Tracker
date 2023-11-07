@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Doctor Appointment",
+      "day": "Feb 5th @2:30pm",
+      "remainder": true
+    },
+    {
+      "id": 2,
+      "text": "Meeting At School",
+      "day": "Feb 6th @1:30pm",
+      "remainder": true
+    },
+    {
+      "id": 3,
+      "text": "Food Shopping",
+      "day": "Feb 5th @9:30Am",
+      "remainder": true
+    },
+    {
+      "text": "internship discussion ",
+      "day": "today @6:pm",
+      "remainder": true,
+      "id": 4
+    },
+    {
+      "text": "hi ",
+      "day": "hello",
+      "remainder": true,
+      "id": 5
+    },
+    {
+      "text": "sfsd",
+      "day": "sdfsd",
+      "remainder": true,
+      "id": 6
+    }
+  ]
+}
