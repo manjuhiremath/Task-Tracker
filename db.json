@@ -23,18 +23,6 @@
       "day": "today @6:pm",
       "remainder": true,
       "id": 4
-    },
-    {
-      "text": "hi ",
-      "day": "hello",
-      "remainder": true,
-      "id": 5
-    },
-    {
-      "text": "sfsd",
-      "day": "sdfsd",
-      "remainder": true,
-      "id": 6
     }
   ]
 }
