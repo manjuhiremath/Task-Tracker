@@ -39,6 +39,10 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: Start JSON server
+        run: npm install -g json-server
+      - name: run JSON server
+        run: json-server --watch db.json &
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
