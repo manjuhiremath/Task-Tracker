@@ -4,6 +4,9 @@ import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 
+
+
+
 //using function components 
 const App = () => {
     const[showaddTask,setShowAddTask]=useState(false);
@@ -18,18 +21,18 @@ const App = () => {
     },[])
 
     const fetchTasks = async()=>{
-      const res = (await fetch('http://localhost:5000/tasks')).json()
+      const res = (await fetch('http://localhost:3000/tasks')).json()
       return res;
     }
     
     const fetchTask = async(id)=>{
-      const res = (await fetch(`http://localhost:5000/tasks/${id}`)).json()
+      const res = (await fetch(`http://localhost:3000/tasks/${id}`)).json()
       return res;
     }
 
       //Delete Task
       const deleteTask = async(id) =>{
-        await fetch(`http://localhost:5000/tasks/${id}`,{
+        await fetch(`http://localhost:3000/tasks/${id}`,{
         method:'DELETE'
       })
         setTasks(tasks.filter((task)=>task.id!==id))
