@@ -21,18 +21,18 @@ const App = () => {
     },[])
 
     const fetchTasks = async()=>{
-      const res = (await fetch('http://localhost:3000/tasks')).json()
+      const res = (await fetch('https://my-json-server.typicode.com/manjuhiremath/Task-Tracker/tasks')).json()
       return res;
     }
     
     const fetchTask = async(id)=>{
-      const res = (await fetch(`http://localhost:3000/tasks/${id}`)).json()
+      const res = (await fetch(`https://my-json-server.typicode.com/manjuhiremath/Task-Tracker/tasks/${id}`)).json()
       return res;
     }
 
       //Delete Task
       const deleteTask = async(id) =>{
-        await fetch(`http://localhost:3000/tasks/${id}`,{
+        await fetch(`https://my-json-server.typicode.com/manjuhiremath/Task-Tracker/tasks/${id}`,{
         method:'DELETE'
       })
         setTasks(tasks.filter((task)=>task.id!==id))
@@ -42,7 +42,7 @@ const App = () => {
     const toggleRemainder =async(id)=>{
           const taskToToggle = await fetchTask(id)
           const updTask={...taskToToggle,remainder:!taskToToggle.remainder}
-          const res = await fetch(`http://localhost:5000/tasks/${id}`,{
+          const res = await fetch(`https://my-json-server.typicode.com/manjuhiremath/Task-Tracker/tasks/${id}`,{
             method:'PUT',
             headers:{
               'Content-type':'application/json'
@@ -52,10 +52,10 @@ const App = () => {
           const data = await res.json()
           setTasks(tasks.map((task)=>task.id===id?{...task,remainder:data.remainder}:task))
     }
-    
+    // https://my-json-server.typicode.com/manjuhiremath/Task-Tracker/tasks/
     //AddTask
     const addTask=async(task)=>{
-      const res = await(fetch('http://localhost:5000/tasks',{
+      const res = await(fetch('https://my-json-server.typicode.com/manjuhiremath/Task-Tracker/tasks',{
         method:"POST",
         headers:{
           'content-type':'application/json'

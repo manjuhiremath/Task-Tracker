@@ -4,25 +4,32 @@
       "id": 1,
       "text": "Doctor Appointment",
       "day": "Feb 5th @2:30pm",
-      "remainder": true
+      "remainder": false
     },
     {
       "id": 2,
       "text": "Meeting At School",
       "day": "Feb 6th @1:30pm",
-      "remainder": true
+      "remainder": false
     },
     {
-      "id": 3,
-      "text": "Food Shopping",
-      "day": "Feb 5th @9:30Am",
-      "remainder": true
+      "text": "call Dad",
+      "day": "March 3rd @5:00",
+      "remainder": false,
+      "id": 3
     },
     {
-      "text": "internship discussion ",
-      "day": "today @6:pm",
-      "remainder": true,
-      "id": 4
+      "id": 4,
+      "text": "Meeting At School",
+      "day": "Feb 10th @5:30pm",
+      "remainder": false
+    },
+    {
+      "text": "Call Prashant",
+      "day": "April 6rd @1:00",
+      "remainder": false,
+      "id": 5
     }
+
   ]
 }
